@@ -1,11 +1,11 @@
 
 //Set number of connected sensor
-const int sensor_num = 1;
+const int sensor_num = 4;
 //Reflash rate (in MS)
 const int reflesh_rate = 50;
 //lowpass_length
-const int lowpass_length = 10;
-const float threshold = 0.97;
+const int lowpass_length = 10; //stable: 10 , sensitive:8
+const float threshold = 0.97; //stable: 0.97 , sensitive: 1.0
 
 //buff for lowpass to avoid chuttering
 float lowpass_buf[sensor_num][lowpass_length];
